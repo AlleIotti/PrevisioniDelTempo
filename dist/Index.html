@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+
+  <meta charset='UTF-8'/>
+  <title>Previsioni del tempo</title>
+  <link rel="icon" href="images/icon.png"><!-- immagine TAB favicon -->
+  <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet"><!-- font GOOGLE -->
+  <link rel='stylesheet' href='style.css'/><!-- collegamento pagina css -->
+  <script src="main.js" defer></script><!-- collegamento pagina js -->
+
+</head>
+
+<body>
+<section class="page fadeIn">
+
+  <header>  <!-- Titolo pagina -->
+    <h1 class="rubberBand">Previsioni del tempo</h1>
+  </header>
+
+  <div class="display box"> <!-- barra ricerca -->
+      <input type="text" class="inputValue" placeholder="Cerca una città..."><!-- barra ricerca -->
+      <input type="submit" class="button" value="cerca"><!-- pulsante cerca -->
+  </div>
+
+  <div class="display box">   <!-- Lista Informazioni, verranno rempitr con valori delle variabili in javascript-->
+    <h2 class="name" id="name"></h2>
+
+    <h3 class="desc"></h3>
+    <h3 class="temp">Inserisci una città nella barra di ricerca</h3> <!-- il testo viene visualizzato quando viene caricata la pagina -->
+                                                                    <!-- verrà rimpiazato con il valore associato quando verrà effettuata la ricerca-->
+    <p class="tempPerc"></p>
+    <p class="minTemp"></p>
+    <p class="maxTemp"></p>
+    <p class="hum"></p>
+  </div>
+</section>
+
+<footer>
+      <h2 class="fadeIn">Previsioni del tempo delle principali città Italiane</h2>
+</footer>
+
+<!-- Informazioni aggiuntive di altre città -->
+<section class="container">
+      <div class="card fadeIn"> <!-- Informazioni città1 -->
+          <div class="content">
+            <h2 id="name1"></h2>
+            <h3 class="temp1"></h3>
+            <h3 class="desc1"></h3>
+          </div>
+      </div>
+
+      <div class="card fadeIn"> <!-- Informazioni città2 -->
+          <div class="content">
+            <h2 id="name2"></h2>
+            <h3 class="temp2"></h3>
+            <h3 class="desc2"></h3>
+        </div>
+      </div>
+
+      <div class="card fadeIn"> <!-- Informazioni città3 -->
+          <div class="content">
+            <h2 id="name3"></h2>
+            <h3 class="temp3"></h3>
+            <h3 class="desc3"></h3>
+        </div>
+      </div>
+
+</section>
+
+</body>
+</html>

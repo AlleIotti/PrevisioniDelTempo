@@ -1,0 +1,214 @@
+body /*Modifica tutta la pagina*/
+{
+  background-image: url("images/wp.jpg");
+  background-size: cover;
+  background.attachment: fixed;
+
+  flex-direction: column;
+  align-items: center;
+}
+
+@keyframes fadeIn
+{
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 5s;
+}
+
+.page /*menu in mezzo alla pagina*/
+{
+  margin-top: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 650px;
+  width: 800px;
+  background: rgba(255, 255, 255, .2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+header/*Modifiche solo per il Titolo pagina*/
+{
+  display: flex;
+  justify-content:center;
+}
+
+footer
+{
+  display: flex;
+  justify-content:center;
+  padding-top: 25px;
+  padding-bottom:25px;
+}
+
+.box /*Modifiche per barra ricerca e Lista Informazioni*/
+{
+  display: flex;
+  /*margin: 20px;
+  padding: 20px;*/
+  justify-content: center;
+}
+
+.display /*Modifiche per barra ricerca e Lista Informazioni*/
+{
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="text"] /*Modifica barra ricerca*/
+{
+  height: 50px;
+  padding: 5px;
+  border: none;
+  border-radius: 30px;
+  width: 250px;
+  font-size: 20px;
+  font-family: 'Fredoka One', cursive;
+  color: black;
+  background: white;
+  opacity: 0.8;
+}
+
+.button /*Modifica tasto ricerca*/
+{
+  height: 50px;
+  padding: 0;
+  border: none;
+  border-radius: 30px;
+  margin-top: 5px;
+  width: 150px;
+  font-size: 20px;
+  font-family: 'Fredoka One', cursive;
+  color: black;
+  background: white;
+  opacity: 0.8;
+
+  cursor: pointer;
+}
+
+.button:hover /*Animazioni tasto ricerca*/
+{
+  color: black;
+  background: white;
+  opacity: 1;
+}
+.button:active
+{
+  transform: translateY(4px);
+}
+
+input:focus /*Tolgo righe di contorno su input*/
+{
+  outline: none;
+}
+
+h1 /*Modifiche h1*/
+{
+  color: #fff;
+  font-family: 'Fredoka One', cursive;
+  font-size: 65px;
+  text-shadow: 2px 2px #000000;
+  /*padding-left: 40px;*/
+}
+
+h2 /*Modifiche h2*/
+{
+  color: #fff;
+  font-family: 'Fredoka One', cursive;
+  font-size: 45px;
+  text-shadow: 2px 2px #000000;
+  margin: 10px 0;
+}
+
+h3 /*Modifiche h3*/
+{
+  color: #fff;
+  font-family: 'Fredoka One', cursive;
+  font-size: 40px;
+  text-shadow: 2px 2px #000000;
+  text-align: center;
+  margin: 5px 0;
+}
+
+p /*Modifiche p*/
+{
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-shadow: 2px 2px #000000;
+    margin: 2px 0;
+}
+
+.container /*Modifiche box informazioni altre città*/
+{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    /*border: 1px solid #FFF865; /*debugging*/
+    border-top: 100px;
+}
+
+.card
+{
+  position: relative;
+  left: 50px;
+  width: 300px;
+  height: 250px;
+
+
+  /*border: 1px solid #FFF865; /*debugging*/
+  background: rgba(255, 255, 255, .2);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+
+.content
+{
+  flex-direction: column;
+  align-items: center;
+}
+
+.content h2 {margin-bottom: 25px;}
+
+
+/*Ottimizazzione per SmartPhone*/
+@media only screen and (max-width: 500px)
+{
+  .page
+  {
+    width: 35%;
+    height: 35%;
+  }
+  input[type="text"]
+  {
+    height: 25px;
+    width: 100px;
+    font-size: 10px;
+  }
+  input[type="submit"]
+  {
+    width: 80px;
+    height: 25px;
+    font-size: 10px;
+  }
+  h1 {font-size: 20px;}
+  h2, h3 {font-size: 20px;}
+  p {font-size: 15px;}
+
+  .container
+  {
+    width: 60%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .card  {width: 50%;}
+}
