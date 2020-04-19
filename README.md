@@ -18,3 +18,8 @@ i seguenti passi
 4)nel comand prompt di node.js digitare  npm install per installare Webpack e dotenv-webpack
 
 5)nel comand prompt di node.js digitare  npm run built
+
+WARNING:
+se per caso "Previsioni del tempo" non dovesse funzionare, restituendo error401,
+la causa puo essere che la vostra key non sia ancora stata attivata,  
+consultare https://openweathermap.org/faq per ulteriori informazioni
