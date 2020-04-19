@@ -1,6 +1,13 @@
 # PrevisioniDelTempo
-ATTENZIONE:
-prima di aprere la pagina HTML (all'interno della cartella dist)eseguire i seguenti passi
+Ciao, questo è il mio secondo progetto per Start2Impact, il progetto della guida
+di javascript.
+
+Questa appliczione utilizza le informazioni dalle API di OpenWeatherMap.
+Prima di utilizzarl aquindi e necessario registrarsi su https://openweathermap.org/
+e richiedere la API key.
+
+prima di aprire la pagina HTML (all'interno della cartella dist) bisogna eseguire
+i seguenti passi
 
 1)creare un file .env
 
